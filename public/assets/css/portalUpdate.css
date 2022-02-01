@@ -1,0 +1,243 @@
+/****** IGNORE ******/
+@import url("https://fonts.googleapis.com/css2?family=Dongle&family=Roboto+Condensed&display=swap");
+
+.copyright {
+  display: block;
+  margin-top: 100px;
+  text-align: center;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.copyright a {
+  text-decoration: none;
+  color: #ee4e44;
+}
+
+/****** CODE ******/
+
+.file-upload {
+  display: block;
+  text-align: center;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+}
+.file-upload .file-select {
+  display: block;
+  border: 2px solid #dce4ec;
+  color: #34495e;
+  cursor: pointer;
+  height: 40px;
+  line-height: 40px;
+  text-align: left;
+  background: #ffffff;
+  overflow: hidden;
+  position: relative;
+}
+.file-upload .file-select .file-select-button {
+  background: #dce4ec;
+  padding: 0 10px;
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+}
+.file-upload .file-select .file-select-name {
+  line-height: 40px;
+  display: inline-block;
+  padding: 0 10px;
+}
+.file-upload .file-select:hover {
+  border-color: #34495e;
+  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+}
+.file-upload .file-select:hover .file-select-button {
+  background: #34495e;
+  color: #ffffff;
+  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+}
+.file-upload.active .file-select {
+  border-color: #3fa46a;
+  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+}
+.file-upload.active .file-select .file-select-button {
+  background: #3fa46a;
+  color: #ffffff;
+  transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+}
+.file-upload .file-select input[type="file"] {
+  z-index: 100;
+  cursor: pointer;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+.file-upload .file-select.file-select-disabled {
+  opacity: 0.65;
+}
+.file-upload .file-select.file-select-disabled:hover {
+  cursor: default;
+  display: block;
+  border: 2px solid #dce4ec;
+  color: #34495e;
+  cursor: pointer;
+  height: 40px;
+  line-height: 40px;
+  margin-top: 5px;
+  text-align: left;
+  background: #ffffff;
+  overflow: hidden;
+  position: relative;
+}
+.file-upload .file-select.file-select-disabled:hover .file-select-button {
+  background: #dce4ec;
+  color: #666666;
+  padding: 0 10px;
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+}
+.file-upload .file-select.file-select-disabled:hover .file-select-name {
+  line-height: 40px;
+  display: inline-block;
+  padding: 0 10px;
+}
+
+.page-modal__wrapper {
+  max-width: 30rem;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+.modal__overlay {
+  position: absolute;
+  top: 0;
+  background: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
+}
+.modal__overlay.hidden {
+  display: none;
+}
+.modal__wrapper {
+  max-width: 500px;
+  padding: 10px 30px;
+  width: 100%;
+  -webkit-box-shadow: -2px 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: -2px 4px 10px rgba(0, 0, 0, 0.2);
+  position: absolute;
+  z-index: 2;
+  background: whitesmoke;
+  opacity: 1;
+  pointer-events: auto;
+  -webkit-transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  transform: translateY(0px);
+  -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease;
+  transition: opacity 0.2s ease, -webkit-transform 0.3s ease;
+  -o-transition: transform 0.3s ease, opacity 0.2s ease;
+  transition: transform 0.3s ease, opacity 0.2s ease;
+  transition: transform 0.3s ease, opacity 0.2s ease,
+    -webkit-transform 0.3s ease;
+}
+.modal__wrapper.hidden {
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transform: translateY(-50px);
+  -ms-transform: translateY(-50px);
+  transform: translateY(-50px);
+}
+.modal__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: relative;
+  margin: 0;
+}
+.modal__close {
+  background: none;
+  border: none;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  right: 0;
+  -webkit-transition: -webkit-transform 0.4s ease;
+  transition: -webkit-transform 0.4s ease;
+  -o-transition: transform 0.4s ease;
+  transition: transform 0.4s ease;
+  transition: transform 0.4s ease, -webkit-transform 0.4s ease;
+}
+.modal__close p {
+  background-color: red;
+  font-size: 3rem;
+  font-weight: 900;
+  background-image: -o-linear-gradient(45deg, #4b086d, #f254a8, #4b086d);
+  background-image: linear-gradient(45deg, #4b086d, #f254a8, #4b086d);
+  background-size: 100%;
+  background-repeat: repeat;
+  margin: 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.modal__close:hover {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.btn {
+  background-image: -o-linear-gradient(45deg, #4b086d, #f254a8, #4b086d);
+  background-image: linear-gradient(45deg, #4b086d, #f254a8, #4b086d);
+  padding: 1rem 2.5rem;
+  border: none;
+  font-size: 1.5rem;
+  color: whitesmoke;
+  background-size: 300% 100%;
+  font-weight: 900;
+  letter-spacing: 0.1rem;
+  border-radius: 0.5rem;
+  -webkit-box-shadow: -2px 4px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: -2px 4px 10px rgba(0, 0, 0, 0.2);
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  -webkit-transition: background-position 1.5s ease;
+  -o-transition: background-position 1.5s ease;
+  transition: background-position 1.5s ease;
+}
+.btn:hover {
+  background-position: 100% 0;
+  -webkit-transition: background-position 0.5s ease;
+  -o-transition: background-position 0.5s ease;
+  transition: background-position 0.5s ease;
+}

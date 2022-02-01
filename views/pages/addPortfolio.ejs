@@ -1,0 +1,50 @@
+<link rel="stylesheet" href="assets/css/PortalUpdate.css" />
+<style>
+  body {
+    width: 400px;
+    margin: 100px auto;
+    background-color: #f5f5f5;
+  }
+</style>
+<form method="post" enctype="multipart/form-data" action="/addPortfolio">
+  <div style="margin-top: 20px" class="single-form col-xl-8">
+    <input type="text" id="name" name="name" placeholder="Portfolio Name" />
+  </div>
+  <!-- single form -->
+
+  <div style="margin-top: 20px" class="single-form">
+    <input
+      type="text"
+      id="clientName"
+      name="clientName"
+      placeholder="Client Name"
+    />
+  </div>
+  <!-- single form -->
+  <div style="margin-top: 20px" class="single-form">
+    <input type="text" id="link" name="link" placeholder="portfolio Link" />
+  </div>
+  <!-- single form -->
+  <div style="margin-top: 20px" class="single-form">
+    <textarea name="desc" id="desc" placeholder="Description"></textarea>
+  </div>
+  <!-- single form -->
+  <div style="margin-top: 20px" class="single-form">
+    <textarea name="value" id="value" placeholder="Portfolio Value"></textarea>
+  </div>
+  <!-- single form -->
+  <p class="form-message"></p>
+  <input type="file" name="portfolio" id="portfolio" />
+  <!-- </div>
+  
+</div> -->
+  <div style="margin-top: 20px" class="single-form">
+    <button class="main-btn" type="submit">Add Portfolio</button>
+  </div>
+  <!-- single form -->
+</form>
+
+<!-- IGNORE -->
+<div class="copyright">By <a href="#">Truly Ambitious</a>.</div>
+
+<script type="text/javascript" src="assets/js/PortalUpdate.js/"></script>

@@ -1,0 +1,96 @@
+.dialog-overlay {
+  z-index: 2;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.dialog {
+  background-image: url("./img/bg-white2.jpg");
+  z-index: 3;
+  background-color: #fff;
+  padding: 10px;
+  text-align: center;
+  width: 110%;
+  max-width: 400px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.dialog-overlay[aria-hidden="true"],
+.dialog[aria-hidden="true"] {
+  display: none;
+}
+
+.dialog-overlay:not([aria-hidden="true"]),
+.dialog:not([aria-hidden="true"]) {
+  display: block;
+}
+
+.sr-only {
+  opacity: 0;
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+}
+
+.modal__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  position: relative;
+  margin: 0;
+}
+.modal__close {
+  background: none;
+  border: none;
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  right: 0;
+  -webkit-transition: -webkit-transform 0.4s ease;
+  transition: -webkit-transform 0.4s ease;
+  -o-transition: transform 0.4s ease;
+  transition: transform 0.4s ease;
+  transition: transform 0.4s ease, -webkit-transform 0.4s ease;
+}
+.modal__close p {
+  background-color: #754ef9;
+  font-size: 3rem;
+  font-weight: 900;
+  background-image: -o-linear-gradient(45deg, #f254a8, #754ef9, #754ef9);
+  background-image: linear-gradient(45deg, #f254a8, #754ef9, #754ef9);
+  background-size: 100%;
+  background-repeat: repeat;
+  margin: 0;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.modal__close:hover {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.btn:hover {
+  background-color: #754ef9;
+  color: #fff;
+  background-position: 100% 0;
+  -webkit-transition: background-position 0.5s ease;
+  -o-transition: background-position 0.5s ease;
+  transition: background-position 0.5s ease;
+}
+/* .btn {
+  background-color: grey;
+  padding: 1em 1.5em;
+  border-radius: 1rem;
+  text-decoration: none;
+} */
