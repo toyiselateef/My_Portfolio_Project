@@ -28,7 +28,7 @@
 
 -----------------------------------------------------------------------------------*/
 /*===========================
-    1. COMMON css 
+    1. COMMON css
 ===========================*/
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800");
 body {
@@ -540,7 +540,7 @@ p {
   }
 }
 /*===========================
-    2.HEADER css 
+    2.HEADER css
 ===========================*/
 .navigation {
   -webkit-box-shadow: 0px 0px 29px 0px rgba(134, 134, 134, 0.25);
@@ -974,7 +974,7 @@ p {
 }
 
 /*===========================
-        3.ABOUT css 
+        3.ABOUT css
 ===========================*/
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .about-area {
@@ -1081,7 +1081,7 @@ p {
 }
 
 /*===========================
-        4.SERVICES css 
+        4.SERVICES css
 ===========================*/
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .services-area {
@@ -1141,7 +1141,7 @@ p {
 }
 
 /*===========================
-    4.CALL TO ACTION css 
+    4.CALL TO ACTION css
 ===========================*/
 .call-to-action {
   position: relative;
@@ -1218,7 +1218,7 @@ p {
 }
 
 /*===========================
-        5.WORK css 
+        5.WORK css
 ===========================*/
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .work-area {
@@ -1365,7 +1365,7 @@ p {
 }
 
 /*===========================
-       6.PRICING css 
+       6.PRICING css
 ===========================*/
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .pricing-area {
@@ -1440,7 +1440,7 @@ p {
 }
 
 /*===========================
-       7.BLOG css 
+       7.BLOG css
 ===========================*/
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .blog-area {
@@ -1535,7 +1535,7 @@ p {
 }
 
 /*===========================
-       8.CONTACT css 
+       8.CONTACT css
 ===========================*/
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .contact-area {
@@ -1656,7 +1656,7 @@ p.form-message.error.form-message.error {
 }
 
 /*===========================
-       9.FOOTER css 
+       9.FOOTER css
 ===========================*/
 .footer-widget {
   background-color: #152136;
@@ -1753,7 +1753,7 @@ p.form-message.error.form-message.error {
 }
 
 /*===========================
-      10.PAGE BANNER css 
+      10.PAGE BANNER css
 ===========================*/
 .page-banner {
   margin-top: 95px;
@@ -1828,7 +1828,7 @@ p.form-message.error.form-message.error {
 }
 
 /*===========================
-   10.SINGLE BLOG PAGE css 
+   10.SINGLE BLOG PAGE css
 ===========================*/
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .single-blog-page {

@@ -59,11 +59,14 @@ var configRoutes = function (app, dir) {
         message: req.body.message,
         email: req.body.email,
         name: req.body.name,
+        website: req.body.website,
+        Tel: req.body.Tel,
       };
-      var service = new ContactService();
+      var service1 = new ContactService();
+      var service2 = new ContactService();
       Promise.all([
-        service._sendMsg("TA", "ThankYou", data),
-        service._sendMsg("TA", "Contact", data),
+        service1._sendMsg("TA", "ThankYou", data),
+        service2._sendMsg("TA", "Contact", data),
       ])
         .then()
         .catch(console.log);

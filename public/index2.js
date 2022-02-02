@@ -1,8 +1,9 @@
-function Dialog(dialogEl, overlayEl, headerE1) {
+function Dialog(dialogEl, overlayEl, headerE1, callToAction) {
   this.dialogEl = dialogEl;
   this.overlayEl = overlayEl;
   this.focusedElBeforeOpen;
   this.headerE1 = headerE1;
+  this.callToAction = callToAction;
   this.h2value;
 
   var focusableEls = this.dialogEl.querySelectorAll(
@@ -18,6 +19,7 @@ function Dialog(dialogEl, overlayEl, headerE1) {
 
 Dialog.prototype.open = function () {
   this.headerE1.classList.remove("fixed-top");
+  this.callToAction.classList.remove("call-to-action");
   var Dialog = this;
 
   this.dialogEl.removeAttribute("aria-hidden");
@@ -44,6 +46,7 @@ Dialog.prototype.close = function () {
     this.focusedElBeforeOpen.focus();
   }
   this.headerE1.classList.add("fixed-top");
+  this.callToAction.classList.add("call-to-action");
 };
 
 Dialog.prototype._handleKeyDown = function (e) {

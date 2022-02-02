@@ -49,6 +49,5 @@ app.use(express.json());
 configRoutes(app, __dirname);
 
 app.listen(process.env.PORT, function () {
-  console.log(config["port"]);
   console.log("app listening at port %s", process.env.PORT);
 });

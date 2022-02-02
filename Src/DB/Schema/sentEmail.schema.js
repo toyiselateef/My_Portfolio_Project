@@ -1,34 +1,35 @@
-
-import '../DBConn/Database.js';'../DBConn/Database.js';
-import validator from 'validator';
-import timestamp from '../timestamp.js'
-import mongoose from 'mongoose';
+import "../DBConn/Database.js";
+("../DBConn/Database.js");
+import validator from "validator";
+import timestamp from "../timestamp.js";
+import mongoose from "mongoose";
 let sentMailSchema = new mongoose.Schema({
   messageId: {
     type: String,
     required: true,
     unique: true,
-     }, 
-    desc: String,
-    clientName:String
-  }
-);
+  },
+  desc: String,
+  clientName: String,
+  website: String,
+  ClientsNo: String,
+});
 sentMailSchema.plugin(timestamp);
 
-sentMailSchema.virtual('id').get(function () {
-      return this._id.toHexString();
-  });
+sentMailSchema.virtual("id").get(function () {
+  return this._id.toHexString();
+});
 // pfolioSchema.pre('save', function (next) {
 //   let now = Date.now()
-   
+
 //   this.date = now
 //   // Set a value for createdAt only if it is null
 //   // if (!this.createdAt) {
 //   //   this.createdAt = now
 //   // }
-  
+
 //   // Call the next function in the pre-save chain
-//   next();   
+//   next();
 // })
 // pfolioSchema.virtual('id').get(function () {
 //   return this._id.toHexString();
@@ -43,5 +44,5 @@ sentMailSchema.virtual('id').get(function () {
 //   return this.model('portfolioSchema').find({id: this.id}, cb);
 // };
 
- const pfoliomodel = mongoose.model('sentEmail', sentMailSchema,'sent_Emails');
- export default pfoliomodel
+const pfoliomodel = mongoose.model("sentEmail", sentMailSchema, "sent_Emails");
+export default pfoliomodel;

@@ -5,7 +5,7 @@ let saveSentEmailDetails = function (sEmailData) {
   return newModel
     .save()
     .then((doc) => {
-      console.log(doc);
+      console.log(doc._id);
       console.log("sentEmail Data saved succefully");
     })
     .catch((err) => {

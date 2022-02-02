@@ -16,7 +16,7 @@ class portfolioClass {
 
     //.catch(console.log("error"));
     result.exec(callback);
-    console.log(resultss);
+    //console.log(resultss);
     return resultss;
   }
 
